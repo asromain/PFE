@@ -1,0 +1,170 @@
+<div class="modal" ng-class="{'show': !logged, hide: logged }" data-keyboard="false" data-backdrop="static"    role="dialog" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="myModalLabel">Signin :</h3>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-1">
+                <form  name="formLogin" novalidate>
+                  <label for="loginPseudo" >
+                    Pseudo
+                  </label>
+                  <br>
+                  <input type="text" id="loginPseudo" name="pseudo" ng-model="login.pseudo" required />
+
+                  <br>
+                  <label for="loginPassword" >
+                    Mot de passe  
+                  </label>
+                  <br>
+                  <input type="password" id="loginPassword" name="password" ng-model="login.password" required />
+                
+                  <br>
+                  <br>
+                  <span class="btn glyphicon glyphicon-send btn-info  btn-lg" ng-click="checkLogin();"></span>Signin
+                  <span class="btn glyphicon glyphicon-plus-sign btn-info btn-lg" ng-click="logged = true ; created=true"></span>Signup
+                
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+        </div>
+      </div>
+    </div>
+</div>
+
+ 
+
+
+ <div class="overlay" ng-if=true>
+      <div class="overlay-container">
+        
+    </div>
+
+    <fieldset class="col-sm-6 col-md-6 col-lg-6">
+      <legend>Question public : </legend>
+      
+        <div class="question-container">
+            <section ng-repeat="event in events">
+
+              <div class="question" >
+                   <span class="glyphicon glyphicon-user"> </span>  name : {{public_name}}
+                   <br>
+                  <div class="question-header glyphicon glyphicon-time">
+                       il y'a ....
+
+                  </div>
+
+                  <br>
+                  <br>
+                  <label editable-textarea="event.content" e-rows="4" e-cols="50" ng-model="event.content"  style="color : black ; text-transform: capitalize; text-shadow: 2px 2px #FFFFFF;">
+                      {{event.content}}
+                  </label>
+                  <br>
+                  <br>
+                  <span><i class="glyphicon glyphicon-tag"></i>Slide #{{event.num_slide}} </span>
+                  
+                  <div class="btn-group pull-right">
+                  <i class="btn glyphicon glyphicon-send pull-right question-icon gi-1-8" ng-click="sendToBD($index)"></i>
+                  <i class="btn glyphicon glyphicon-trash pull-right question-icon gi-1-8" ng-click="removeEvent($index)"></i>
+                  </div>
+              </div>
+                 
+
+    
+            </section>
+          
+          
+         </div>
+    </fieldset>
+
+
+    <fieldset class="col-sm-6 col-md-6 col-lg-6">
+      <legend>Tweet public : </legend>
+      
+        <div class="question-container">
+            <section ng-repeat="tweet in tweets">
+
+              <div class="question" >
+                  <span class="glyphicon glyphicon-user"> </span> name : {{tweet.user.name}}
+                  <br>
+                  <br>
+                  <div class="question-header glyphicon glyphicon-time animate-show">
+                      il y'a ....  {{tweet.created_at}}   
+                  </div>
+                  <br>
+                  <label e-rows="4" e-cols="50" style="color : black ; text-transform: capitalize; text-shadow: 2px 2px #FFFFFF;">
+                      {{tweet.text}}
+                  </label>
+                  <br>
+                  <br>
+                  <span><i class="glyphicon glyphicon-tag"></i></span>
+                  
+                  <div class="btn-group pull-right">
+                  <i class="btn glyphicon glyphicon-send pull-right question-icon gi-1-8" ng-click="sendToScreen($index)"></i>
+                  <i class="btn glyphicon glyphicon-trash pull-right question-icon gi-1-8" ng-click="removeTweet($index)"></i>
+                  </div>
+              </div>
+                 
+
+    
+            </section>
+          
+          
+         </div>
+    </fieldset>
+    
+    
+</div>
+
+
+
+
+
+
+<div class="modal" ng-class="{'show': created, hide: !created }" data-keyboard="false" data-backdrop="static"    role="dialog" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="myModalLabel">Signup :</h3>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-1">
+                <form  name="formSignup" novalidate>
+                  <label for="SignupPseudo" >
+                    Pseudo
+                  </label>
+                  <br>
+                  <input type="text" id="SignupPseudo" name="pseudo" ng-model="signup.pseudo" required />
+
+                  <br>
+                  <label for="signupPassword" >
+                    Mot de passe  
+                  </label>
+                  <br>
+                  <input type="password" id="signupPassword" name="password" ng-model="signup.password" required />
+                
+                  <br>
+                  <br>
+                  <span class="btn glyphicon glyphicon-send btn-info  btn-lg" ng-click="inscription(); created=false ; logged=false"></span>Signup
+                 
+                  <span href="/#/" class="btn glyphicon glyphicon-remove btn-info btn-lg" ng-click="created=false ; logged=false"></span>Back
+                
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+</div>

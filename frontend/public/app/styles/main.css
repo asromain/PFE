@@ -1,0 +1,61 @@
+/*
+Error: File to import not found or unreadable: bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.
+        on line 7 of main.scss
+
+2: @import "sendQ.scss";
+3: 
+4: 
+5: $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+6: // bower:scss
+7: @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+8: // endbower
+9: 
+10: /* if lte IE 8 *\/
+11: .browsehappy {
+12:   margin: 0.2em 0;
+
+Backtrace:
+main.scss:7
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:67:in `rescue in import'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:45:in `import'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/import_node.rb:37:in `css_import?'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/engine.rb:295:in `render_with_sourcemap'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:52:in `parse'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/exec/base.rb:19:in `parse!'
+D:/Tools/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.20/bin/scss:13:in `<top (required)>'
+D:/Tools/Ruby22-x64/bin/scss:23:in `load'
+D:/Tools/Ruby22-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap-sass-official/assets/stylesheets/_bootstrap.scss.\A         on line 7 of main.scss\A \A 2: @import \"sendQ.scss\";\A 3: \A 4: \A 5: $icon-font-path: \"../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/\";\A 6: // bower:scss\A 7: @import \"bootstrap-sass-official/assets/stylesheets/_bootstrap.scss\";\A 8: // endbower\A 9: \A 10: /* if lte IE 8 */\A 11: .browsehappy {\A 12:   margin: 0.2em 0;"; }

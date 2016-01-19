@@ -1,0 +1,149 @@
+.top-panel {
+  height: 15%;
+
+  background-color: #dddddd;
+}
+
+.mid-panel {
+  height: 45%;
+
+  background-color: #eeeeee;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.bot-panel {
+  height: 40%;
+
+  background-color: #dddddd;
+
+}
+
+
+
+.question-content {
+  font-size: 1.5em;
+}
+
+.btns-question > .row {
+  height: 50%;
+  
+}
+.btns-question button {
+  width: 100%;
+
+}
+
+
+/*
+.top-panel {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 15%;
+
+  background-color: #dddddd;
+
+  .note-assistant,
+  .timer {
+    height: 100%;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  .note-assistant {
+
+  }
+
+  .timer {
+    
+  }
+
+}
+.mid-panel {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 45%;
+
+  background-color: #eeeeee;
+  border-top: 1px solid #bbbbbb;
+  border-bottom: 1px solid #bbbbbb;
+  white-space: nowrap;
+
+  .question-container,
+  .question-buttons {
+    height: 100%;
+    display: inline-block;
+    white-space: normal;
+  }
+
+  .question-container {
+    width: 80%;
+
+    .question-title,
+    .question-content {
+      width: 100%;
+    }
+
+    .question-title {
+      height: 20%;
+      padding: 1%;
+      font-size: 16px;
+    }
+
+    .question-content {
+      height: 80%;
+      padding: 2%;
+      padding-top: 1%;
+      font-size: 24px;
+    }
+
+  }
+
+  .question-buttons {
+    width: 19%;
+
+    .btn-send,
+    .btn-cancel {
+      width: 98%;
+      height: 46%;
+      margin: 1%;
+      background-color: red;
+    }
+    .btn-send:hover,
+    .btn-cancel:hover {
+      background-color: silver;
+    }
+
+  }
+
+}
+
+.bot-panel {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 40%;
+
+  background-color: #dddddd;
+
+  .sondage-title,
+  .sondage-content {
+    width: 100%;
+  }
+
+  .sondage-title {
+    padding: 15px;
+    height: 30%;
+    font-size: 16px;
+  }
+
+  .sondage-content {
+    padding: 25px;
+    height: 70%;
+    font-size: 24px;
+  }
+
+}
+*/

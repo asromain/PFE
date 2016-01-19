@@ -1,0 +1,31 @@
+<!--TODO afficher uniquement les questions de l'utilisateurs + celle qui ont été validée (checker status code) -->
+<!--TODO creer des filtres (par upvote / par question répondues)
+
+
+<h3>Connecté en tant que : {{usersList[0].nom}}</h3><br/>    <!-- TODO sessions -->
+
+
+<div class="allQuestionsWrapper">
+  <div ng-repeat="qr in Map track by $index">
+      <div class="questionWrapper col-xs-12" ng-class="{answered: qr.response.content != null}">
+          <strong>{{usersList[qr.question.public_id - 1].prenom}} {{usersList[qr.question.public_id - 1].nom}}</strong> : {{qr.question.content}} <span class="question_hour" am-time-ago="qr.question.created_at | amFromUnix"></span>
+          <br/>
+          <div class="questionActions">
+              <div class="col-xs-4 text-left">
+                  <input ng-hide="qr.response.content == null" ng-click="show = !show" type="button" style="font-size:20px;" value="▼"/>
+              </div>
+              <div class="col-xs-4 text-center">
+                  <div class="nbSlide">Slide n°{{qr.question.num_slide}}</div>
+              </div>
+              <div class="col-xs-4 text-right">
+                  <input type="button" ng-click="qr.question.up_vote = qr.question.up_vote + 1" style="font-size:20px;" value="👍{{qr.question.up_vote}}" />
+              </div>
+          </div>
+          <div ng-show="show" class="questionAnswer text-left animate-show">
+              <strong>{{qr.response.content}}</strong>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div style="margin-bottom:30px;">&nbsp;</div>

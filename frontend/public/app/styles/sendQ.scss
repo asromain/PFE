@@ -1,0 +1,20 @@
+/*
+  formulaire dans sendQuestion
+*/
+#formulaire {
+  background-color: #F8F8F8;
+  border: 1px solid #DDD;
+  border-radius: 15px;
+  margin: 30px 0;
+  padding: 0 30px;
+  h2 {
+    padding: 10px 0 5px 0;
+  }
+  textarea, input {
+    font-size: 20px;
+    resize: none;
+  }
+  input {
+    height:40px;
+  }
+}

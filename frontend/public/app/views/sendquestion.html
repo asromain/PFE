@@ -1,0 +1,17 @@
+
+<div id="formulaire">
+    <h2>Avez-vous une question ? N'hésitez pas!</h2><br/>
+
+    <div class="form-group clearfix" ng-form="questionForm">
+        <!--numero de slide -->
+        <label for="numSlide">Numero de slide:</label>
+        <input type="number" min="0" class="form-control" id="numSlide" ng-model="numslide"><br/>
+        <!--contenu de la question-->
+        <label for="content">Votre question:</label>
+        <textarea class="form-control" rows="5" id="content" ng-model="textcontent" max-character="200" ng-trim="false" required></textarea><br/>
+        <p>{{200 - textcontent.length}} caractères restants.</p>
+        <!--envoi-->
+        <button class="btn btn-primary btn-lg pull-right" ng-disabled="questionForm.$invalid || !questionForm.$valid" ng-click="sendQuestionToMod()">Envoyer</button>
+    </div>
+</div>
+

@@ -1,0 +1,65 @@
+<div class="container-fluid height100">
+    <div class="row top-panel">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-10">
+                    Note de l'assistant :
+                </div>
+                <div class="col-xs-2 text-center">
+                    <button class="btn btn-default" ng-click="startTimer()" ng-if="!timerRunning">play</button>
+                    <button class="btn btn-default" ng-click="stopTimer()" ng-if="timerRunning">pause</button>
+                    <button class="btn btn-default" ng-click="resetTimer()">reset</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10">
+                    {{ note }}
+                </div>
+                <div class="col-xs-2 text-center">
+                    <timer interval="1000" max-time-unit="'minute'">{{mminutes}}:{{sseconds}}</timer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mid-panel">
+        <div class="col-xs-12" ng-if="question.isDisplayed">
+            <div class="row">
+                <div class="col-xs-12">
+                    Question : {{ question.name }} {{ question.slide }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 question-content">
+                    {{ question.content }}
+                    <uib-progressbar animate="false" max="progressBarMax" value="progressBarVal"></uib-progressbar>
+                </div>
+                <div class="col-xs-2 btns-question height100">
+                    <div class="row">
+                        <div class="col-xs-12 height100">
+                            <button class="btn btn-default height100" ng-click="sendQuestionToScreen()">go</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 height100">
+                            <button class="btn btn-default height100" ng-click="sendQuestionToAssistant()">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bot-panel">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    Sondage :
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    ici les sondages
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
